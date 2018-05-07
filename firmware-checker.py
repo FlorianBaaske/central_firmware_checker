@@ -78,7 +78,6 @@ def send_mail(my_list):
     "From:" + mail_sender + "\n" + \
     "To:" + mail_receiver + "\n"
     msg = msg + tabulate(my_list, headers='keys')
-    print(msg)
     server.sendmail(mail_sender, mail_receiver, msg)
     server.close
 
@@ -144,7 +143,7 @@ for x in device_type:
     response = api_call_get(url, payload)
     devices = response['devices']
     for device in devices:
-        if not device['upgrade_required']:
+        if device['upgrade_required']:
             update = {}
             update['name'] = device['hostname']
             update['type'] = x
@@ -157,7 +156,7 @@ payload = {'access_token' : access_token, 'limit' : 1000}
 response = api_call_get(url, payload)
 swarms = response['swarms']
 for swarm in swarms:
-    if not swarm['upgrade_required']:
+    if swarm['upgrade_required']:
             update = {}
             update['name'] = swarm['swarm_name']
             update['type'] = 'Swarm'

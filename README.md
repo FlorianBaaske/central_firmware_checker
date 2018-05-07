@@ -1,6 +1,7 @@
-# central_firmware_checker will check with the help of the Central API, 
-# if a new recommended firmware for one of your devices is available. 
-# If a new software is available, the script will send a notification via mail. 
+central_firmware_checker will check with the help of the Central API, 
+if a new recommended firmware for one of your devices is available. 
+If a new software is available, the script will send a notification via mail. 
+
 Usage: firmware-checker.py [options]
 
 Options:

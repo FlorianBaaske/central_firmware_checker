@@ -32,7 +32,6 @@ mail_sender = ''
 #Receiver address of the notification mail
 mail_receiver = ''
 
-
 parser = OptionParser()
 parser.add_option('--base_url', dest='base_url', help='Base URL for Central API Gateway')
 parser.add_option('--client_id', dest='client_id', help='Client ID from the Central API Gateway configuration')

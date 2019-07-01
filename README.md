@@ -5,7 +5,7 @@ If a new software is available, the script will send a notification via mail.
 Usage: firmware-checker.py [options]
 
 Options:
-  -h, --help            show this help message and exit
+  -h, --help             show this help message and exit
   --base_url=BASE_URL   Base URL for Central API Gateway
   --customer_id=CUSTOMERID
                         Your Customer ID from Central
